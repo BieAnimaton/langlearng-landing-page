@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LangLearn</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <div class="circle pulse"></div>
+        <header>
+            <a href="#" class="logo">LangLearn</a>
+            <ul>
+                <li><a href="#">Cursos</a></li>
+                <li><a href="#">Grupos</a></li>
+                <li><a href="#">Novidades</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Venha estudar com a gente.<br>Simples. <span>Inovador. </span>Prático.</h2>
+                <p>A LangLearn é uma plataforma online que oferece cursos das mais diversas tecnologias crescentes do mercado. Possui uma equipe com os melhores educadores do país. Não perca tempo e se cadastre já!</p>
+                <div class="buttonBox">
+                    <a href="#">Criar conta</a>
+                    <a href="#" class="entrar">Entrar</a>
+                </div>
+            </div>
+        </div>
+        <div class="subcontent">
+            <p class="text">---------</p>
+            <div class="buttonBox">
+                <img src="images/settings.png" alt="" onmouseenter="changeText('1')">
+                <img src="images/code.png" alt="" onmouseenter="changeText('2')">
+                <img src="images/light.png" alt="" onmouseenter="changeText('3')">
+            </div>
+        </div>
+        <ul class="redes">
+            <li><a href=""><img src="images/youtube.png" alt="Youtube"></a></li>
+            <li><a href=""><img src="images/facebook.png" alt="Facebook"></a></li>
+            <li><a href=""><img src="images/twitter.png" alt="Twitter"></a></li>
+            <li><a href=""><img src="images/instagram.png" alt="Instagram"></a></li>
+        </ul>
+    </section>
+    <footer>&copy; 2022 - Comunidade LangLearn - Todos os direitos reservados.</footer>
+
+    <script>
+        function changeText(code) {
+            const text_area = document.querySelector('.text');
+
+            if (code == 1) {
+                text_area.innerText = "A LangLearn te dará acesso a melhor sincronia aluno-professor, garantindo os melhores projetos com as melhores tecnologias, tudo com extrema agilidade! Aqui a gente não perde tempo!";
+            } else if (code == 2) {
+                text_area.innerText = "Você também aprenderá a escrever códigos de maneira mais eficiente, levando em conta: agilidade, organização e solução! Tudo para que todos os seus problemas desapareçam!";
+            } else if (code == 3) {
+                text_area.innerText = "Em todas as aulas, vamos fazer questão de exercitar a criatividade do aluno. Retomaremos as melhores ideias e divisões para que seu projeto fique cada vez mais atraente!";
+            }
+        }
+        changeText(1);
+    </script>
+</body>
+</html>
